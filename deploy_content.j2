@@ -3,8 +3,13 @@
 #"address": "192.168.41.27"
 #"ansible_all_ipv4_addresses": "192.168.41.27"
 
+<html>
+<head>
+<title>TEAM1 WEBSITE</title>
+</head>
 
-TESTING CHANGES
-local_ip = {{ address }}
-hosts = {{ prdx-webserver316 }}
-dsdas
+<p>Welcome to {{ ansible_hostname }}</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The ipv4 address is {{ ansible_default_ipv4['address'] }}</p>
