@@ -69,10 +69,11 @@ frontend  main *:5000
 
 ##------------------------------------------
 ## FRONTEND FOR APACHE NODES
-## frontend haproxy_http
+##------------------------------------------
+  frontend haproxy_http
             mode http
-            bind *:80 
-            default_backend nodes_http 
+            bind *:80
+            default_backend nodes_http
 #----------------------------------------
 
 #---------------------------------------------------------------------
@@ -97,7 +98,7 @@ backend app
 ##
 ##---------
 backend nodes_http
-        balance roundrobin 
-        server prdx-webserver117.ziyotek1.local 192.168.41.22:80 check
-        server prdx-webserver217.ziyotek1.local 192.168.41.24:80 check
-        server prdx-webserver317.ziyotek1.local 192.168.41.26:80 check
+        balance roundrobin
+        server prdx-webserver116.ziyotek1.local 192.168.41.23:80 check
+        server prdx-webserver216.ziyotek1.local 192.168.41.25:80 check
+        server prdx-webserver316.ziyotek1.local 192.168.41.27:80 check
